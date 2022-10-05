@@ -3,17 +3,17 @@ using System.Collections.Generic;
 
 namespace Lab7
 {
+    public interface WriterIF
+    {
+        void View();
+        void Edit();
+    }
+
     public interface EditorIF
     {
         void Save();
         Novel_ItemIF Retrieve();
         void Delete();
-    }
-
-    public interface WriterIF
-    {
-        void View();
-        void Edit();
     }
 
     public class Editor
